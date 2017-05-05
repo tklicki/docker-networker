@@ -1,0 +1,23 @@
+# Full list of included packages (in no particular order):
+
+- vim
+- mtr-tiny
+- tracepath
+- iputils-ping
+- mtr-tiny
+- telnet
+- tcpdump
+- dnsutils
+- bind9-host
+- iputils-arping
+- fping
+- iperf
+- iperf3
+- iptraf
+- dhcpdump
+- sipcalc
+- nmap
+- net-tools
+- minicom
+- siege
+- whois
