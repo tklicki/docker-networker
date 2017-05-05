@@ -1,10 +1,11 @@
 FROM debian:stretch
 MAINTAINER Tomasz Klicki <tomasz@klicki.pl>
 
+# Update package cache
 RUN apt-get update
 
 # Basic tools, not network related
-RUN apt-get install -y vim
+RUN apt-get install -y vim-tiny
 RUN apt-get install -y zsh
 RUN apt-get install -y liquidprompt
 RUN apt-get install -y grc
@@ -35,11 +36,18 @@ RUN apt-get install -y nmap
 RUN apt-get install -y minicom
 RUN apt-get install -y siege
 RUN apt-get install -y whois
+RUN apt-get install -y socat
+RUN apt-get install -y sslh
+RUN apt-get install -y iodine
 
 # Clean packages cache
 RUN apt-get clean
 
+# Enable Liquidprompt
+RUN touch ~/.zshrc
 RUN chsh -s /usr/bin/zsh root
 RUN liquidprompt_activate
+
+ENV HOME /root
 
 CMD ["/bin/bash"]
