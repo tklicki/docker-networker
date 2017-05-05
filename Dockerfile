@@ -6,7 +6,6 @@ RUN apt-get update
 
 # Basic tools, not network related
 RUN apt-get install -y vim-tiny
-RUN apt-get install -y zsh
 RUN apt-get install -y liquidprompt
 RUN apt-get install -y grc
 RUN apt-get install -y openssh-client
@@ -44,8 +43,6 @@ RUN apt-get install -y iodine
 RUN apt-get clean
 
 # Enable Liquidprompt
-RUN touch ~/.zshrc
-RUN chsh -s /usr/bin/zsh root
 RUN liquidprompt_activate
 
 ENV HOME /root
