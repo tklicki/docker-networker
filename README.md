@@ -2,7 +2,7 @@
 
 - vim
 - mtr-tiny
-- tracepath
+- iputils-tracepath
 - iputils-ping
 - mtr-tiny
 - telnet
