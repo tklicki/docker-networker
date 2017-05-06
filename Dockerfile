@@ -35,6 +35,7 @@ RUN apt-get install -y nmap
 RUN apt-get install -y minicom
 RUN apt-get install -y siege
 RUN apt-get install -y whois
+RUN apt-get install -y nethogs
 # RUN apt-get install -y socat
 # RUN apt-get install -y sslh
 # RUN apt-get install -y iodine
