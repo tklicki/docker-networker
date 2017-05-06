@@ -28,6 +28,7 @@ RUN apt-get install -y fping
 RUN apt-get install -y iperf
 RUN apt-get install -y iperf3
 RUN apt-get install -y iptraf
+RUN apt-get install -y isc-dhcp-client
 RUN apt-get install -y dhcpdump
 RUN apt-get install -y dhcping
 RUN apt-get install -y sipcalc
@@ -35,6 +36,7 @@ RUN apt-get install -y nmap
 RUN apt-get install -y minicom
 RUN apt-get install -y siege
 RUN apt-get install -y whois
+RUN apt-get install -y nethogs
 # RUN apt-get install -y socat
 # RUN apt-get install -y sslh
 # RUN apt-get install -y iodine
